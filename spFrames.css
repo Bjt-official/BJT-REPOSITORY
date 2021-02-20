@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(29, 27, 46);
+}
+
+.box.animate{
+    top: 100px;
+    left: 400px;
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    border: 1px solid tomato;
+}
+
+.box.animate.juduk{
+    top: 100px;
+    left: 250px;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    border: 1px solid tomato;
+}
+
+.box.animate:hover{
+    animation: anim 3s linear infinite;
+}
+
+h1.box.animateh{
+    top: 5px;
+    left: 60px; 
+    color: yellowgreen; 
+    position: absolute;
+    font: 3em "Fira Sans", sans-serif;
+}
+
+h1.box.animateh:hover{
+    animation: anima 3s linear infinite;
+}
+
+p.box.animatep{
+    top: 200px;
+    left: 60px; 
+    color: lightblue;
+    position: absolute;
+    font: 2em "Fira Sans", sans-serif;
+}
+
+p.box.animatep:hover{
+    animation: anima 3s linear infinite;
+}
+
+@keyframes anim{
+    0%{
+        border-radius: 25px;
+        border: 1px solid lightblue;
+    }
+    50%{
+        border: 1px solid yellowgreen;
+    }
+    100%{
+        border-radius: 25px;
+        border: 1px solid rgb(173, 43, 141);
+    }
+}
+
+@keyframes anima{
+    0%{
+        color: tomato;
+    }
+    50%{
+        color: lightblue;
+    }
+    100%{
+        color: rgb(173, 43, 141);
+    }
+}
